@@ -1,0 +1,50 @@
+（1）默认站长春
+（2）每个店铺 对应一个 客户信息
+（3）客户信息 users 
+
+	字段		类型		长度		说明
+	shop_id		integer		20		店铺id 主键
+	email		string		20		邮箱
+	password	string		20		密码
+	shop		string 		20 		店铺
+	shop_type	string		20		店铺类型    比如 餐饮 或者 KTV  服饰
+	city		string		20		城市
+	college		string		20		学校
+	campus		string		20		校区
+	position	string		20		店铺位置
+	introduction  	string		1000		店铺简介
+	pay_time	Date				是否可以发信息  先期默认 为 可以 后期的话 可以通过 通过发短信来进行初始化时间
+
+(4) user 发布信息 information
+	
+	字段		类型		长度		说明
+	shop_id		integer		20		店铺id
+	information_id	integer		20		信息id 主键
+	information_time Date				发布时间
+	content		string		20		发布内容
+
+
+(5) 发布信息 的评论
+
+        字段		类型		长度		说明
+	shop_id		integer		20		店铺id
+	information_id	integer		20		信息id 
+	review		integer		20		评论id 主键
+	review_time	Date				评论时间
+（6）店铺注册 管理页面
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
